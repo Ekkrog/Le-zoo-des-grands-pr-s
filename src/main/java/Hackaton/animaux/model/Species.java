@@ -1,14 +1,17 @@
 package Hackaton.animaux.model;
 
 public class Species {
-    private final String regime;
-    private final String origine;
+    private final String name;
+    private final String diet;
+    private final String origin;
 
-    public Species(String regime, String origine) {
-        this.regime = regime;
-        this.origine = origine;
+    public Species(String name,String diet, String origin) {
+        this.name = name;
+        this.diet = diet;
+        this.origin = origin;
     }
 
-    public String getRegime() { return regime; }
-    public String getOrigine() { return origine; }
+    public String getName() { return name; }
+    public String getDiet() { return diet; }
+    public String getOrigin() { return origin; }
 }
