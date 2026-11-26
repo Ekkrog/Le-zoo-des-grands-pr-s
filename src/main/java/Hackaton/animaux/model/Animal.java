@@ -1,63 +1,34 @@
 package Hackaton.animaux.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Animal {
-    private Long id;
+
     private String name;
+    private int age;
     private String species;
-    private String keeper;
-    private List<String> foods = new ArrayList<>();
+    private List<String> cares;
 
-    public Animal() {
-    }
-
-    public Animal(Long id, String name, String species, String keeper, List<String> foods) {
-        this.id = id;
+    public Animal(String name, int age, String species, List<String> cares) {
         this.name = name;
+        this.age = age;
         this.species = species;
-        this.keeper = keeper;
-        this.foods = foods;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+        this.cares = cares;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getAge() {
+        return age;
     }
 
     public String getSpecies() {
         return species;
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
-    }
-
-    public String getKeeper() {
-        return keeper;
-    }
-
-    public void setKeeper(String keeper) {
-        this.keeper = keeper;
-    }
-
-    public List<String> getFoods() {
-        return foods;
-    }
-
-    public void setFoods(List<String> foods) {
-        this.foods = foods;
+    public List<String> getCares() {
+        return cares;
     }
 }
