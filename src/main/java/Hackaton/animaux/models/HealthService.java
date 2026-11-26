@@ -1,0 +1,8 @@
+package Hackaton.animaux.models;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class HealthService {
+    public String status(String name) { return "ok" + name; }
+}
