@@ -1,4 +1,4 @@
-package Hackaton.animaux.models;
+package Hackaton.animaux.services;
 
 import org.springframework.stereotype.Service;
 
