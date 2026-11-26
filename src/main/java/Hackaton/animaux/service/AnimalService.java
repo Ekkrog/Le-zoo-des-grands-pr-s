@@ -1,18 +1,19 @@
 package Hackaton.animaux.service;
 
+import Hackaton.animaux.model.Animal;
+import Hackaton.animaux.repository.AnimalRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // Le métier : ce qu'on cherche parmi les animaux. Ni HTTP ni JSON ici.
 @Service
 public class AnimalService {
     private final AnimalRepository animalRepository;
-    private final AnimalService animalService;
 
-    public AnimalService(AnimalService animalService) {
+    public AnimalService(AnimalRepository animalRepository) {
         this.animalRepository = animalRepository;
-        this.animalService = animalService;
     }
 
     public List<Animal> findAll() {
