@@ -2,9 +2,11 @@ package Hackaton.animaux.controller;
 
 import Hackaton.animaux.model.Animal;
 import Hackaton.animaux.service.AnimalService;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,5 +34,11 @@ public class AnimalController {
             }
         }
         return ResponseEntity.ok(service.findAll());
+    }
+
+    @PostMapping("/animals")
+    public ResponseEntity<Animal> create(@RequestBody Animal animaux) {
+        service.create(animaux);
+        return ResponseEntity.status(HttpStatus.CREATED).body(animaux);
     }
 }
