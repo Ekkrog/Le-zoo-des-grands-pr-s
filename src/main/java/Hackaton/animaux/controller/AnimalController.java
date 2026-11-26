@@ -37,8 +37,8 @@ public class AnimalController {
     }
 
     @PostMapping("/animals")
-    public ResponseEntity<Animal> create(@RequestBody Animal animaux) {
-        service.create(animaux);
-        return ResponseEntity.status(HttpStatus.CREATED).body(animaux);
+    public ResponseEntity<Animal> create(@RequestBody Animal animal) {
+        service.create(animal);
+        return ResponseEntity.status(HttpStatus.CREATED).body(animal);
     }
 }

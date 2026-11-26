@@ -31,7 +31,7 @@ public class AnimalService {
         return result;
     }
 
-    public void create(Animal animaux) {
-        AnimalRepository.create(animaux);
+    public void create(Animal animal) {
+        animalRepository.create(animal);
     }
 }

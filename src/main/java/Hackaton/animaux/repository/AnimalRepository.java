@@ -36,4 +36,7 @@ public class AnimalRepository {
     public List<Animal> findAll() {
         return animaux;
     }
+    public void create(Animal animal) {
+        animaux.add(animal);
+    }
 }
