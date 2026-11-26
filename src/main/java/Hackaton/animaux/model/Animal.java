@@ -1,7 +1,5 @@
 package Hackaton.animaux.model;
 
-package Hackaton.animaux.model;
-
 import java.util.ArrayList;
 import java.util.List;
 
