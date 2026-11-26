@@ -1,13 +1,24 @@
 package Hackaton.animaux.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Animal {
     private Long id;
     private String name;
-    private String specie;
-    private String food;
+    private String species;
     private String keeper;
+    private List<String> foods = new ArrayList<>();
 
     public Animal() {
+    }
+
+    public Animal(Long id, String name, String species, String keeper, List<String> foods) {
+        this.id = id;
+        this.name = name;
+        this.species = species;
+        this.keeper = keeper;
+        this.foods = foods;
     }
 
     public Long getId() {
@@ -26,20 +37,12 @@ public class Animal {
         this.name = name;
     }
 
-    public String getSpecie() {
-        return specie;
+    public String getSpecies() {
+        return species;
     }
 
-    public void setSpecie(String specie) {
-        this.specie = specie;
-    }
-
-    public String getFood() {
-        return food;
-    }
-
-    public void setFood(String food) {
-        this.food = food;
+    public void setSpecies(String species) {
+        this.species = species;
     }
 
     public String getKeeper() {
@@ -48,5 +51,13 @@ public class Animal {
 
     public void setKeeper(String keeper) {
         this.keeper = keeper;
+    }
+
+    public List<String> getFoods() {
+        return foods;
+    }
+
+    public void setFoods(List<String> foods) {
+        this.foods = foods;
     }
 }
