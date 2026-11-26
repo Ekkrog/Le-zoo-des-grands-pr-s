@@ -30,4 +30,8 @@ public class AnimalService {
         }
         return result;
     }
+
+    public void create(Animal animal) {
+        animalRepository.create(animal);
+    }
 }
