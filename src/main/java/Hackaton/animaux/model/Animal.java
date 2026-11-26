@@ -13,6 +13,14 @@ public class Animal {
     public Animal() {
     }
 
+    public Animal(Long id, String name, String species, String keeper, List<String> foods) {
+        this.id = id;
+        this.name = name;
+        this.species = species;
+        this.keeper = keeper;
+        this.foods = foods;
+    }
+
     public Long getId() {
         return id;
     }
