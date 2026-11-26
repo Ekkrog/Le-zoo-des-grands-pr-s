@@ -1,5 +1,6 @@
 package Hackaton.animaux.controller;
 
+import Hackaton.animaux.service.AnimalService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
